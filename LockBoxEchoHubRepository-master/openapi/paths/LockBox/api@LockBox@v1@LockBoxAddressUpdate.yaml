@@ -39,7 +39,7 @@ put:
                 ResponseTransactionID: Transaction Number
                 TransLog:                  
                  - ResponseCode: "001"
-                   ResponseCodeDesc: Lockbox updated successfully
+                   ResponseCodeDesc: Lockbox Updated Successfully
 
                     
             mapName_900:   
