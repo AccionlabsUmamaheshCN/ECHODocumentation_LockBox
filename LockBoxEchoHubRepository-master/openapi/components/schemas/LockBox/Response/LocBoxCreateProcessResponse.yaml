@@ -17,7 +17,7 @@ properties:
         properties:
           TransResponseCode:
             type: string
-            description: Transaction response code number
+            description: Response Code Number
           TransResponseCodeDesc:
             type: string
             description: Success.
@@ -112,7 +112,7 @@ properties:
             description: "1063"
           ErrorDesc:
             type: string
-            description: Agreement not a valid value
+            description: Agreement Not a Valid Value
             
       TransError JSON Validation Failed Code 1071:
         type: object
@@ -122,6 +122,6 @@ properties:
             description: "2017"
           ErrorDesc:
             type: string
-            description: Status not a valid value
+            description: Status Not a Valid Value
 
       
