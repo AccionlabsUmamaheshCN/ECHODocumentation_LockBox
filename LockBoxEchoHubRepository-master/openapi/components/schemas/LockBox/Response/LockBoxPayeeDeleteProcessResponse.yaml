@@ -20,7 +20,7 @@ properties:
             description: Response Code Number
           ResponseCodeDesc:
             type: string
-            description: Payee Delete Success
+            description: Payee Deleted Successfully
           
             
   This is the Response for Response Code 900:

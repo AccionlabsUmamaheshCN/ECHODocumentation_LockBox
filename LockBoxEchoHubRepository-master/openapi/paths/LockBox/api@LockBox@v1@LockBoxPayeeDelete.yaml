@@ -35,7 +35,7 @@ delete:
                 ResponseTransactionID: Transaction Number
                 TransLog:                  
                   ResponseCode: "001"
-                  ResponseCodeDesc: Payee Delete Success
+                  ResponseCodeDesc: Payee Deleted Successfully
 
                     
             mapName_900:   
