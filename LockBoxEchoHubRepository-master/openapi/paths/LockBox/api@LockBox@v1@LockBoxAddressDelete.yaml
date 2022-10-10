@@ -35,7 +35,7 @@ delete:
                 ResponseTransactionID: Transaction Number
                 TransLog:                  
                   ResponseCode: "001"
-                  ResponseCodeDesc: Lockbox deleted successfully
+                  ResponseCodeDesc: Lockbox Deleted Successfully
 
                     
             mapName_900:   
@@ -46,6 +46,6 @@ delete:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:  
-                    ErrorCode: Error code number
-                    ErrorDesc: Error description
+                    ErrorCode: Error Code Number
+                    ErrorDesc: Error Description
                     
