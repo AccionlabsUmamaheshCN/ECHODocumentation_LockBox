@@ -1,4 +1,5 @@
 openapi: 3.1.0
+
 info:  
   title: ECHOHUB LockBox API Portal  
   description: >-
@@ -57,12 +58,7 @@ components:
       type: apiKey
       description: The client key.
       name: x-ClientKey
-      in: header
-    ApiKeyAuth:
-      type: apiKey
-      name: x-Authorization
-      in: header
-      description: Requests should pass an api_key header.  
+      in: header   
   
 tags: 
   #Authorization
