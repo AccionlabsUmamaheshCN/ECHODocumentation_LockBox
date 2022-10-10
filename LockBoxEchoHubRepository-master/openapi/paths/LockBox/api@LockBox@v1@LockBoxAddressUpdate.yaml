@@ -38,8 +38,8 @@ put:
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 TransLog:                  
-                  ResponseCode: "001"
-                  ResponseCodeDesc: Lockbox updated successfully
+                 - ResponseCode: "001"
+                   ResponseCodeDesc: Lockbox updated successfully
 
                     
             mapName_900:   
@@ -51,17 +51,17 @@ put:
                 ResponseTransactionID: Transaction Number
                 TransError:  
                   - ErrorCode: 1092
-                  - ErrorDesc: Invalid Address Line 1
+                    ErrorDesc: Invalid Address Line 1
                   - ErrorCode: 154
-                  - ErrorDesc: Invalid or Missing City
+                    ErrorDesc: Invalid or Missing City
                   - ErrorCode: 155
-                  - ErrorDesc: Invalid or Missing State
+                    ErrorDesc: Invalid or Missing State
                   - ErrorCode: 156
-                  - ErrorDesc: Invalid or Missing Zip Code
+                    ErrorDesc: Invalid or Missing Zip Code
                   - ErrorCode: 150
-                  - ErrorDesc: Invalid or Missing Tax ID
+                    ErrorDesc: Invalid or Missing Tax ID
                   - ErrorCode: 1063
-                  - ErrorDesc: Agreement not a valid value
+                    ErrorDesc: Agreement not a valid value
                   - ErrorCode: 2017
-                  - ErrorDesc: Status not a valid value
+                    ErrorDesc: Status not a valid value
                     

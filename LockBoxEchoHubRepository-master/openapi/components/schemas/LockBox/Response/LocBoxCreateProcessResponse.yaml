@@ -15,13 +15,12 @@ properties:
       TransLog for Payment Response Code 001:
         type: object
         properties:
-          ResponseCode:
+          TransResponseCode:
             type: string
-            description: Response code number
-          ResponseCodeDesc:
+            description: Response Code Number
+          TransResponseCodeDesc:
             type: string
-            description: Lockbox Create Success
-          
+            description: Success.
             
   This is the Response for Response Code 900:
     type: object
@@ -44,6 +43,85 @@ properties:
           ErrorDesc:
            type: string
            description: Error description
-          
-          
-          
+      
+      TransError JSON Validation Failed Code 6:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "6"
+          ErrorDesc:
+            type: string
+            description: Invalid JSON String
+
+      TransError JSON Validation Failed Code 1092:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "1092"
+          ErrorDesc:
+            type: string
+            description: Invalid Address Line 1
+                
+      TransError JSON Validation Failed Code 154:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "154"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing City
+
+      TransError JSON Validation Failed Code 155:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "155"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing State
+      
+      TransError JSON Validation Failed Code 156:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "156"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing Zip Code
+            
+      TransError JSON Validation Failed Code 150:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "150"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing Tax ID 
+      
+      TransError JSON Validation Failed Code 1063:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "1063"
+          ErrorDesc:
+            type: string
+            description: Agreement Not a Valid Value
+            
+      TransError JSON Validation Failed Code 1071:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "2017"
+          ErrorDesc:
+            type: string
+            description: Status Not a Valid Value
+
+      
