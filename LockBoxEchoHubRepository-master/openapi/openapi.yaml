@@ -26,75 +26,75 @@
     - url: https://sandbox.echohealthincapi.com
     - url: https://api.echohealthincapi.com  
 
-paths:
+  paths:
   #Authorization
-  /api/Authentication/v1/Authentication:
-    $ref: paths/Authentication/api@RequestAuthentication@V1.yaml
-  #Lockbox
-  /api/LockBox/v1/LockBox:
-    $ref: paths/LockBox/api@LockBox@v1@LockBoxAddressCreate.yaml
-  /api/LockBox/v1/LockBox/'lbxDirectoryId':
-    $ref: paths/LockBox/api@LockBox@v1@LockBoxAddressUpdate.yaml
-  /api/LockBox/v1/LockBox/'lbxDirectoryId' [DELETE]:
-    $ref: paths/LockBox/api@LockBox@v1@LockBoxAddressDelete.yaml
-  /api/LockBox/v1/Payee:
-    $ref: paths/LockBox/api@LockBox@v1@LockBoxpayeeCreate.yaml
-  /api/LockBox/v1/Payee/'lbxDirectoryId' [PUT]:
-    $ref: paths/LockBox/api@LockBox@v1@LockBoxPayeeUpdate.yaml
-  /api/LockBox/v1/Payee/'lbxDirectoryId'/'payeeId' [DELETE]:
-    $ref: paths/LockBox/api@LockBox@v1@LockBoxPayeeDelete.yaml
-  /api/LockBox/v1/Lookup:
-    $ref: paths/LockBox/api@LockBox@v1@Lookup.yaml
-  /api/LockBox/v1/Lookup/'BatchTransactionId':  
-    $ref: paths/LockBox/api@LockBox@v1@LookupStatus.yaml
+    /api/Authentication/v1/Authentication:
+      $ref: paths/Authentication/api@RequestAuthentication@V1.yaml
+    #Lockbox
+    /api/LockBox/v1/LockBox:
+      $ref: paths/LockBox/api@LockBox@v1@LockBoxAddressCreate.yaml
+    /api/LockBox/v1/LockBox/'lbxDirectoryId':
+      $ref: paths/LockBox/api@LockBox@v1@LockBoxAddressUpdate.yaml
+    /api/LockBox/v1/LockBox/'lbxDirectoryId' [DELETE]:
+      $ref: paths/LockBox/api@LockBox@v1@LockBoxAddressDelete.yaml
+    /api/LockBox/v1/Payee:
+      $ref: paths/LockBox/api@LockBox@v1@LockBoxpayeeCreate.yaml
+    /api/LockBox/v1/Payee/'lbxDirectoryId' [PUT]:
+      $ref: paths/LockBox/api@LockBox@v1@LockBoxPayeeUpdate.yaml
+    /api/LockBox/v1/Payee/'lbxDirectoryId'/'payeeId' [DELETE]:
+      $ref: paths/LockBox/api@LockBox@v1@LockBoxPayeeDelete.yaml
+    /api/LockBox/v1/Lookup:
+      $ref: paths/LockBox/api@LockBox@v1@Lookup.yaml
+    /api/LockBox/v1/Lookup/'BatchTransactionId':  
+      $ref: paths/LockBox/api@LockBox@v1@LookupStatus.yaml
       
-components:
-  securitySchemes:
-    x-ApiKey:
-      type: apiKey
-      name: x-ApiKey
-      description: The API key.
-      in: header
-    x-ClientKey:
-      type: apiKey
-      description: The client key.
-      name: x-ClientKey
-      in: header
-    ApiKeyAuth:
-      type: apiKey
-      name: x-Authorization
-      in: header
-      description: Requests should pass an api_key header.  
+  components:
+    securitySchemes:
+      x-ApiKey:
+        type: apiKey
+        name: x-ApiKey
+        description: The API key.
+        in: header
+      x-ClientKey:
+        type: apiKey
+        description: The client key.
+        name: x-ClientKey
+        in: header
+      ApiKeyAuth:
+        type: apiKey
+        name: x-Authorization
+        in: header
+        description: Requests should pass an api_key header.  
     
-tags: 
+  tags: 
    #Authorization
-  - name: Authorization 
-    description: |
-      This endpoint helps to generate the Authorization Token for accessing the endpoints. 
-      #Lock Box Portal
-   #Lockbox
-  - name: Lockbox
-    description: |
-      Lockbox refers to a payment service that helps speed up receiving and processing check payments. With lockbox service, the checks are mailed to a separate P.O (Post Office) box address maintained by the lockbox provider, such as a bank. The checks are collected, opened, scanned, and deposited directly by the bank. Each day, the deposits will be entered into an automated system with details available via web access.
+    - name: Authorization 
+      description: |
+        This endpoint helps to generate the Authorization Token for accessing the endpoints. 
+        #Lock Box Portal
+    #Lockbox
+    - name: Lockbox
+      description: |
+        Lockbox refers to a payment service that helps speed up receiving and processing check payments. With lockbox service, the checks are mailed to a separate P.O (Post Office) box address maintained by the lockbox provider, such as a bank. The checks are collected, opened, scanned, and deposited directly by the bank. Each day, the deposits will be entered into an automated system with details available via web access.
 
-      On the other hand, lockbox express provides a more efficient system to receive and deposit check payments. The checks and any other payment documents are sent electronically and when received are scanned in a single process reducing the manual effort required to handle the documents several times. 
-      
-      Clients can use the Lockbox APIs to build the directory of eligible P.O. Boxes (lockboxes) and then to submit payment information to determine which payments can be sent electronically to an eligible lockbox.  
-      
-      Lockbox payment has three APIs - Lockbox, Lockbox Payee and Lockbox Lookup  
-      
-      (1) Lockbox  
-      The Lockbox API is used to maintain a list of a client’s eligible lockboxes for delivering electronic payments to the payees. This helps a client send the payment addresses to ECHO Hub for processing the payments. 
-      
-      The lockbox API allows ‘Post’, ‘Put’, and ‘Delete’ operations which correspond to add, update, and delete lockbox addresses respectively.  
+        On the other hand, lockbox express provides a more efficient system to receive and deposit check payments. The checks and any other payment documents are sent electronically and when received are scanned in a single process reducing the manual effort required to handle the documents several times. 
+        
+        Clients can use the Lockbox APIs to build the directory of eligible P.O. Boxes (lockboxes) and then to submit payment information to determine which payments can be sent electronically to an eligible lockbox.  
+        
+        Lockbox payment has three APIs - Lockbox, Lockbox Payee and Lockbox Lookup  
+        
+        (1) Lockbox  
+        The Lockbox API is used to maintain a list of a client’s eligible lockboxes for delivering electronic payments to the payees. This helps a client send the payment addresses to ECHO Hub for processing the payments. 
+        
+        The lockbox API allows ‘Post’, ‘Put’, and ‘Delete’ operations which correspond to add, update, and delete lockbox addresses respectively.  
 
 
-      (2) Lockbox Payee  
-      Lockbox payee API is used to maintain a list of payees associated with each of the lockboxes. This helps a client deliver electronic payments to the payees using the lockbox express process by sending the payment addresses to ECHO Hub for processing payments.  
-      
-      The lockbox payee API allows ‘Post’, ‘Put’, and ‘Delete’ operations for a given lockbox payee which correspond to add, update, and delete payee names respectively.  
+        (2) Lockbox Payee  
+        Lockbox payee API is used to maintain a list of payees associated with each of the lockboxes. This helps a client deliver electronic payments to the payees using the lockbox express process by sending the payment addresses to ECHO Hub for processing payments.  
+        
+        The lockbox payee API allows ‘Post’, ‘Put’, and ‘Delete’ operations for a given lockbox payee which correspond to add, update, and delete payee names respectively.  
 
-      (3) Lockbox Lookup  
-      This API enables the consumer to send a list of payment addresses to perform a lookup for a match on a lockbox in the lockbox directory. Lockbox lookup API helps a client to send payment addresses to ECHO Hub for determining matches to a Lockbox.  
-      
-      Lockbox lookup allows ‘Post’ and ‘Get’ operations. The Post method helps to find a lockbox match in the lockbox directory while the Get method helps to know the status of lockbox batch transactions.
+        (3) Lockbox Lookup  
+        This API enables the consumer to send a list of payment addresses to perform a lookup for a match on a lockbox in the lockbox directory. Lockbox lookup API helps a client to send payment addresses to ECHO Hub for determining matches to a Lockbox.  
+        
+        Lockbox lookup allows ‘Post’ and ‘Get’ operations. The Post method helps to find a lockbox match in the lockbox directory while the Get method helps to know the status of lockbox batch transactions.
