@@ -49,5 +49,10 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:  
-                    ErrorCode: Error Code Number
-                    ErrorDesc: Error Description     
+                  -  ErrorCode: "6"
+                     ErrorDesc: Invalid JSON String
+                  -  ErrorCode: "1041"
+                     ErrorDesc: Invalid or Missing Payee ID
+                  -  ErrorCode: "1000"
+                     ErrorDesc: Invalid or Missing Payee Name
+                  
