@@ -25,9 +25,7 @@
   servers:
     - url: https://sandbox.echohealthincapi.com
     - url: https://api.echohealthincapi.com  
-  security:
-      - x-ApiKey: []
-      - x-ClientKey: []
+  
   paths:
   #Authorization
     /api/Authentication/v1/Authentication:
