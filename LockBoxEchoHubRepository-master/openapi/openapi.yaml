@@ -36,7 +36,7 @@ paths:
   #Lockbox
   /api/LockBox/v1/LockBox:
     $ref: paths/LockBox/api@LockBox@v1@LockBoxAddressCreate.yaml
-  /api/LockBox/v1/LockBox/'lbxDirectoryId' [PUT]:
+  /api/LockBox/v1/LockBox/'lbxDirectoryId':
     $ref: paths/LockBox/api@LockBox@v1@LockBoxAddressUpdate.yaml
   /api/LockBox/v1/LockBox/'lbxDirectoryId' [DELETE]:
     $ref: paths/LockBox/api@LockBox@v1@LockBoxAddressDelete.yaml

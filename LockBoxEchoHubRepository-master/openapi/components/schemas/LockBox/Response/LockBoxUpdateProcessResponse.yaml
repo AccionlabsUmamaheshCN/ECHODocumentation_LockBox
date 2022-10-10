@@ -20,7 +20,7 @@ properties:
             description: Response code number
           ResponseCodeDesc:
             type: string
-            description: Lockbox Update Success
+            description: Lockbox updated successfully
           
             
   This is the Response for Response Code 900:
