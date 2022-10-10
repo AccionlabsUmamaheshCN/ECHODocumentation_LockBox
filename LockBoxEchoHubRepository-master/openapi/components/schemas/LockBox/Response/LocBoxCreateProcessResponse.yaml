@@ -39,10 +39,10 @@ properties:
         properties:
           ErrorCode:
             type: string
-            description:  Error code number
+            description:  Error Code Number
           ErrorDesc:
            type: string
-           description: Error description
+           description: Error Description
       
       TransError JSON Validation Failed Code 6:
         type: object
