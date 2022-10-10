@@ -1,22 +1,30 @@
 
 
-openapi: 3.1.0
-info:  
-  title: ECHOHUB LockBox API Portal  
-  description: >-
-    API Endpoints for the ECHOHUB clients.
+  openapi: 3.1.0
+  info:  
+    title: ECHOHUB LockBox API Portal  
+    description: >-
+      API Endpoints for the ECHOHUB clients.
 
-        SandBox url: https://sandbox.echohealthincapi.com/
-        Production Url : https://api.echohealthincapi.com/
+          SandBox url: https://sandbox.echohealthincapi.com/
+          Production Url : https://api.echohealthincapi.com/
 
-    # Authentication
+      # Authentication
 
-    Authentication is a process by which a system verifies the identity of a
-    user accessing this API.
+      Authentication is a process by which a system verifies the identity of a
+      user accessing this API.
 
-servers:
-  - url: https://sandbox.echohealthincapi.com
-  - url: https://api.echohealthincapi.com  
+      <!-- ReDoc-Inject: <security-definitions> -->
+
+    version: v1
+
+    contact:
+      name: ECHO Health Inc.
+      email: Echo.Hub@echohealthinc.com
+      
+  servers:
+    - url: https://sandbox.echohealthincapi.com
+    - url: https://api.echohealthincapi.com  
 
 paths:
   #Authorization
