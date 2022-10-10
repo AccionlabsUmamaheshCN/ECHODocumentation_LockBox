@@ -38,8 +38,8 @@ put:
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 TransLog:                  
-                  ResponseCode: "001"
-                  ResponseCodeDesc: Lockbox updated successfully
+                 - ResponseCode: "001"
+                   ResponseCodeDesc: Lockbox updated successfully
 
                     
             mapName_900:   
