@@ -17,7 +17,7 @@ properties:
         properties:
           ResponseCode:
             type: string
-            description: Response code number
+            description: Response Code Number
           ResponseCodeDesc:
             type: string
             description: Payee Delete Success
@@ -40,9 +40,9 @@ properties:
         properties:
           ErrorCode:
             type: string
-            description:  Error code number
+            description:  Error Code Number
           ErrorDesc:
            type: string
-           description: Error description
+           description: Error Description
           
           
