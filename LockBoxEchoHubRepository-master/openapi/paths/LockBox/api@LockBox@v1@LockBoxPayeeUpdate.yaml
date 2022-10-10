@@ -38,7 +38,7 @@ put:
                 ResponseTransactionID: Transaction Number
                 TransLog:                  
                   ResponseCode: "001"
-                  ResponseCodeDesc: Payee Update Success
+                  ResponseCodeDesc: Payee Updated Successfully
 
                     
             mapName_900:   
@@ -49,5 +49,9 @@ put:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:  
-                    ErrorCode: Error code number
-                    ErrorDesc: Error description   
+                -  ErrorCode: "6"
+                   ErrorDesc: Invalid JSON String
+                -  ErrorCode: "1041"
+                   ErrorDesc: Invalid or Missing Payee ID
+                -  ErrorCode: "1000"
+                   ErrorDesc: Invalid or Missing Payee Name  

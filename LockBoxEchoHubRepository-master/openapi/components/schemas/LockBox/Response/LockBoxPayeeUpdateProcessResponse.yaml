@@ -17,10 +17,10 @@ properties:
         properties:
           ResponseCode:
             type: string
-            description: Response code number
+            description: Response Code Number
           ResponseCodeDesc:
             type: string
-            description: Payee Update Success
+            description: Payee Updated Successfully
           
             
   This is the Response for Response Code 900:
@@ -40,9 +40,39 @@ properties:
         properties:
           ErrorCode:
             type: string
-            description:  Error code number
+            description:  Error Code Number
           ErrorDesc:
            type: string
-           description: Error description
+           description: Error Description
+
+      TransError JSON Validation Failed Code 6:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "6"
+          ErrorDesc:
+            type: string
+            description: Invalid JSON String
+
+      TransError JSON Validation Failed Code 1041:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "1041"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing Payee ID
+                
+      TransError JSON Validation Failed Code 1000:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "1000"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing Payee Name
           
           
