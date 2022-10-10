@@ -20,7 +20,7 @@ properties:
             description: Response Code Number
           TransResponseCodeDesc:
             type: string
-            description: Success.
+            description: Lockbox Created Successfully.
             
   This is the Response for Response Code 900:
     type: object
