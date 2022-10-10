@@ -20,7 +20,7 @@ properties:
             description: Response Code Number
           ResponseCodeDesc:
             type: string
-            description: Lockbox deleted successfully
+            description: Lockbox Deleted Successfully
           
             
   This is the Response for Response Code 900:
