@@ -61,7 +61,7 @@ put:
                   - ErrorCode: 150
                     ErrorDesc: Invalid or Missing Tax ID
                   - ErrorCode: 1063
-                    ErrorDesc: Agreement not a valid value
+                    ErrorDesc: Agreement Not a Valid Value
                   - ErrorCode: 2017
-                    ErrorDesc: Status not a valid value
+                    ErrorDesc: Status Not a Valid Value
                     
