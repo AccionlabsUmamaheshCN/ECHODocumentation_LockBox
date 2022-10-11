@@ -5,9 +5,9 @@ security:
   - x-ClientKey: []
   
 info:  
-  title: ECHOHUB LockBox API Portal  
+  title: ECHO Hub Lockbox API Portal  
   description: >-
-    API Endpoints for the ECHOHUB clients.
+    API Endpoints for the Lockbox  clients.
 
         SandBox url: https://sandbox.echohealthincapi.com/
         Production Url : https://api.echohealthincapi.com/
