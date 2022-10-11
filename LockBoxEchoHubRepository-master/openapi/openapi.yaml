@@ -1,8 +1,6 @@
 openapi: 3.1.0
 
-security:
-  - x-ApiKey: []
-  - x-ClientKey: []
+
   
 info:  
   title: ECHO Hub Lockbox API Portal  
