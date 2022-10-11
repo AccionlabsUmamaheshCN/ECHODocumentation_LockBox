@@ -39,5 +39,14 @@ get:
                   BatchTransactions:
                     lbxDirectoryId: Lockbox Directory ID
                     PaymentTransactionId: Payment Transaction ID  
-
+                    
+            mapName_900:   
+              summary: "900"
+              value:
+                ReponseCode: "900"
+                ReponseCodeDesc: Failed Transaction
+                ResponseTransactionID: Transaction Number
+                TransError:  
+                  ErrorCode: Error Code Number
+                  ErrorDesc: Invalid Batch Transaction ID
            
