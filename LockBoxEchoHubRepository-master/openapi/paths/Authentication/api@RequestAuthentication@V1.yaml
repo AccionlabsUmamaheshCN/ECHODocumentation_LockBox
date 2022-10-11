@@ -28,7 +28,7 @@ get:
               description: Please scroll the above dropdown list for more response codes          
               summary: "001"
               value:
-                ReponseCode: Response for Payment response code 001
+                ReponseCode: Response for Payment response Code 001
                 ReponseCodeDesc: Successful Transaction                
                 TransLog:  
                   - AuthToken: Authorization token
@@ -37,20 +37,20 @@ get:
               description: Please scroll the above dropdown list for more response codes          
               summary: "901"
               value:
-                ReponseCode: Response for Payment response code 901
+                ReponseCode: Response for Payment response Code 901
                 ReponseCodeDesc:  Transaction  Failure
                 TransError:  
-                  -  ErrorCode: Response for Payment response code 901
+                  -  ErrorCode: Response for Payment response Code 901
                      ErrorCodeDesc: Invalid Customer ID
                      creationDate: Current Date & Time
             mapName2:   
                 description: Please scroll the above dropdown list for more response codes          
                 summary: "905"
                 value:
-                  ReponseCode: Response for Payment response code 905
+                  ReponseCode: Response for Payment response Code 905
                   ReponseCodeDesc: Transaction  Failure              
                   TransError:  
-                    -  ErrorCode: Response for Payment response code 905
+                    -  ErrorCode: Response for Payment response Code 905
                        ErrorCodeDesc: Invalid Endpoint
                        creationDate: Current Date & Time  
                        
@@ -58,7 +58,7 @@ get:
                 description: Please scroll the above dropdown list for more response codes          
                 summary: "900"
                 value:
-                  ReponseCode: Response for Payment response code 900
+                  ReponseCode: Response for Payment response Code 900
                   ReponseCodeDesc: Security Validation Process Failed                
                   TransError:  
                     - ErrorCode: Error Code 900                     
