@@ -34,7 +34,7 @@ paths:
   #Lockbox
   /api/LockBox/v1/LockBox:
     $ref: paths/LockBox/api@LockBox@v1@LockBoxAddressCreate.yaml
-  /api/LockBox/v1/LockBox/'lbxDirectoryId':
+  /api/LockBox/v1/LockBox/{lbxDirectoryId}:
     put:
       tags:
         - Lockbox
@@ -42,6 +42,11 @@ paths:
       x-internal: true
       operationId: LockBoxUpdateProcess
       parameters:
+        - name: lbxDirectoryId
+          in: path
+          required: true
+          schema: 
+            type: string
         - name: x-Authorization
           in: header
           schema:
@@ -108,6 +113,11 @@ paths:
       summary: Lockbox - Delete 
       operationId: LockBoxDeleteProcess
       parameters:
+        - name: lbxDirectoryId
+          in: path
+          required: true
+          schema: 
+            type: string
         - name: x-Authorization
           in: header
           schema:
@@ -155,14 +165,39 @@ paths:
                           
   /api/LockBox/v1/Payee:
     $ref: paths/LockBox/api@LockBox@v1@LockBoxpayeeCreate.yaml
-  /api/LockBox/v1/Payee/'lbxDirectoryId':
+  /api/LockBox/v1/Payee/{lbxDirectoryId}:
     $ref: paths/LockBox/api@LockBox@v1@LockBoxPayeeUpdate.yaml
-  /api/LockBox/v1/Payee/'lbxDirectoryId'/'payeeId':
+    parameters: 
+      - name: lbxDirectoryId
+        in: path
+        required: true
+        schema: 
+          type: string
+
+  /api/LockBox/v1/Payee/{lbxDirectoryId}/{payeeId}:
     $ref: paths/LockBox/api@LockBox@v1@LockBoxPayeeDelete.yaml
+    parameters: 
+      - name: lbxDirectoryId
+        in: path
+        required: true
+        schema: 
+          type: string
+      - name: payeeId
+        in: path
+        required: true
+        schema: 
+          type: string
+
   /api/LockBox/v1/Lookup:
     $ref: paths/LockBox/api@LockBox@v1@Lookup.yaml
-  /api/LockBox/v1/Lookup/'BatchTransactionId':  
+  /api/LockBox/v1/Lookup/{BatchTransactionId}:  
     $ref: paths/LockBox/api@LockBox@v1@LookupStatus.yaml
+    parameters: 
+      - name: BatchTransactionId
+        in: path
+        required: true
+        schema: 
+          type: string
     
 components:
   securitySchemes:
