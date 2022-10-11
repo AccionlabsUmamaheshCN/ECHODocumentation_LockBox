@@ -37,8 +37,8 @@ put:
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 TransLog:                  
-                  ResponseCode: "001"
-                  ResponseCodeDesc: Payee Updated Successfully
+                  - ResponseCode: "001"
+                    ResponseCodeDesc: Payee Updated Successfully
 
                     
             mapName_900:   

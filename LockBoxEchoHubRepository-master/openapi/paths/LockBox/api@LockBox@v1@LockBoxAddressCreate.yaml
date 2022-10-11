@@ -38,8 +38,8 @@ post:
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 TransLog:                  
-                  ResponseCode: "001"
-                  ResponseCodeDesc: Lockbox Created Successfully
+                  - ResponseCode: "001"
+                    ResponseCodeDesc: Lockbox Created Successfully
 
                     
             mapName_900:   

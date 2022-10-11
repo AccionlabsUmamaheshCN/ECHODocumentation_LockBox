@@ -37,8 +37,8 @@ post:
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 TransLog:                  
-                  ResponseCode: "001"
-                  ResponseCodeDesc: Payee Created Successfully
+                 - ResponseCode: "001"
+                   ResponseCodeDesc: Payee Created Successfully
 
                     
             mapName_900:   

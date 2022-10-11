@@ -33,12 +33,12 @@ get:
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 TransLog:                  
-                  BatchTransactionId: Transaction ID
-                  BatchCount: Batch Count
-                  BatchFailedCount: Batch Failed Count
-                  BatchTransactions:
-                    lbxDirectoryId: Lockbox Directory ID
-                    PaymentTransactionId: Payment Transaction ID  
+                 - BatchTransactionId: Transaction ID
+                   BatchCount: Batch Count
+                   BatchFailedCount: Batch Failed Count
+                   BatchTransactions:
+                    - lbxDirectoryId: Lockbox Directory ID
+                      PaymentTransactionId: Payment Transaction ID  
                     
             mapName_900:   
               summary: "900"
@@ -47,6 +47,6 @@ get:
                 ReponseCodeDesc: Failed Transaction
                 ResponseTransactionID: Transaction Number
                 TransError:  
-                  ErrorCode: Error Code Number
-                  ErrorDesc: Invalid Batch Transaction ID
+                 -  ErrorCode: Error Code Number
+                    ErrorDesc: Invalid Batch Transaction ID
            

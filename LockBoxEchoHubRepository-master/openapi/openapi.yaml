@@ -29,7 +29,7 @@ servers:
 
 paths:
 #Authorization
-  /api/Authentication/v1/Authentication:
+  /api/v1/GetToken:
     $ref: paths/Authentication/api@RequestAuthentication@V1.yaml
   #Lockbox
   /api/LockBox/v1/LockBox:
@@ -87,20 +87,20 @@ paths:
                     ReponseCodeDesc: Transaction Failed
                     ResponseTransactionID: Transaction Number
                     TransError:  
-                      - ErrorCode: 1092
-                        ErrorDesc: Invalid Address Line 1
-                      - ErrorCode: 154
-                        ErrorDesc: Invalid or Missing City
-                      - ErrorCode: 155
-                        ErrorDesc: Invalid or Missing State
-                      - ErrorCode: 156
-                        ErrorDesc: Invalid or Missing Zip Code
-                      - ErrorCode: 150
-                        ErrorDesc: Invalid or Missing Tax ID
-                      - ErrorCode: 1063
-                        ErrorDesc: Agreement Not a Valid Value
-                      - ErrorCode: 2017
-                        ErrorDesc: Status Not a Valid Value
+                      -  ErrorCode: 1092
+                         ErrorDesc: Invalid Address Line 1
+                      -  ErrorCode: 154
+                         ErrorDesc: Invalid or Missing City
+                      -  ErrorCode: 155
+                         ErrorDesc: Invalid or Missing State
+                      -  ErrorCode: 156
+                         ErrorDesc: Invalid or Missing Zip Code
+                      -  ErrorCode: 150
+                         ErrorDesc: Invalid or Missing Tax ID
+                      -  ErrorCode: 1063
+                         ErrorDesc: Agreement Not a Valid Value
+                      -  ErrorCode: 2017
+                         ErrorDesc: Status Not a Valid Value
                           
     delete:
       tags:
@@ -138,8 +138,8 @@ paths:
                     ReponseCodeDesc: Successful Transaction
                     ResponseTransactionID: Transaction Number
                     TransLog:                  
-                      ResponseCode: "001"
-                      ResponseCodeDesc: Lockbox Deleted Successfully
+                     - ResponseCode: "001"
+                       ResponseCodeDesc: Lockbox Deleted Successfully
     
                         
                 mapName_900:   
@@ -150,8 +150,8 @@ paths:
                     ReponseCodeDesc: Transaction Failed
                     ResponseTransactionID: Transaction Number
                     TransError:  
-                        ErrorCode: Error Code Number
-                        ErrorDesc: Error Description
+                       -  ErrorCode: Error Code Number
+                          ErrorDesc: Error Description
                           
   /api/LockBox/v1/Payee:
     $ref: paths/LockBox/api@LockBox@v1@LockBoxpayeeCreate.yaml
@@ -182,8 +182,7 @@ tags:
   - name: Authorization 
     description: |
       This endpoint helps to generate the Authorization Token for accessing the endpoints. 
-      #Lock Box Portal
-  #Lockbox
+  #Lockbox 
   - name: Lockbox
     description: |
       Lockbox refers to a payment service that helps speed up receiving and processing check payments. With lockbox service, the checks are mailed to a separate P.O (Post Office) box address maintained by the lockbox provider, such as a bank. The checks are collected, opened, scanned, and deposited directly by the bank. Each day, the deposits will be entered into an automated system with details available via web access.

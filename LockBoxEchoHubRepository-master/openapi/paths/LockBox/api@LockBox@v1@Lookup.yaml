@@ -37,9 +37,9 @@ post:
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 TransLog:                  
-                  LockBoxResponseCode: "001"
-                  LockBoxResponseCodeDesc: Lockbox Queue Success
-                  BatchTransactionId: TTransaction Validated
+                  - LockBoxResponseCode: "001"
+                    LockBoxResponseCodeDesc: Lockbox Queue Success
+                    BatchTransactionId: Transaction Validated
 
                     
             mapName_900:   
@@ -50,6 +50,6 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:  
-                    ErrorCode: Error Code Number
-                    ErrorDesc: Error Description
+                   -  ErrorCode: Error Code Number
+                      ErrorDesc: Error Description
                     
