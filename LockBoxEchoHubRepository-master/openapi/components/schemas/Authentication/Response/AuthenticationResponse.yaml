@@ -59,6 +59,18 @@ properties:
             description: Invalid Endpoint
           creationDate:
             type: string
-            description: Current Date & Time          
-                
-                     
+            description: Current Date & Time    
+            
+      TransError for Payment Response Code 900:
+        type: object
+        properties:
+          ErrorCode:
+            type: string
+            description: Response code for 900
+          ErrorCodeDesc:
+            type: string
+            description: Security Validation Process Failed
+          creationDate:
+            type: string
+            description: Current Date & Time   
+         
