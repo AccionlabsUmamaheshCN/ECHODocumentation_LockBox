@@ -31,8 +31,7 @@ get:
                 ReponseCode: Response for Payment response code 001
                 ReponseCodeDesc: Successful Transaction                
                 TransLog:  
-                   AuthToken: Authorization token
-
+                  - AuthToken: Authorization token
 
             mapName1:   
               description: Please scroll the above dropdown list for more response codes          
@@ -41,9 +40,9 @@ get:
                 ReponseCode: Response for Payment response code 901
                 ReponseCodeDesc:  Transaction  Failure
                 TransError:  
-                    ErrorCode: Response for Payment response code 901
-                    ErrorCodeDesc: Invalid Customer ID
-                    creationDate: Current Date & Time
+                  -  ErrorCode: Response for Payment response code 901
+                     ErrorCodeDesc: Invalid Customer ID
+                     creationDate: Current Date & Time
             mapName2:   
                 description: Please scroll the above dropdown list for more response codes          
                 summary: "905"
@@ -51,7 +50,7 @@ get:
                   ReponseCode: Response for Payment response code 905
                   ReponseCodeDesc: Transaction  Failure              
                   TransError:  
-                      ErrorCode: Response for Payment response code 905
-                      ErrorCodeDesc: Invalid Endpoint
-                      creationDate: Current Date & Time        
+                    -  ErrorCode: Response for Payment response code 905
+                       ErrorCodeDesc: Invalid Endpoint
+                       creationDate: Current Date & Time        
                     
