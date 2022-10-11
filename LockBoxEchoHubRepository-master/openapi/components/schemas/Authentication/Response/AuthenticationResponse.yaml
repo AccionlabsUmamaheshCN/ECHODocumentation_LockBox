@@ -31,7 +31,7 @@ properties:
         properties:
           ErrorCode:
             type: string
-            description: Response code for 901
+            description: Response Code For 901
           ErrorCodeDesc:
             type: string
             description: Invalid Consumer ID
@@ -53,12 +53,24 @@ properties:
         properties:
           ErrorCode:
             type: string
-            description: Response code for 905
+            description: Response Code For 905
           ErrorCodeDesc:
             type: string
             description: Invalid Endpoint
           creationDate:
             type: string
-            description: Current Date & Time          
-                
-                     
+            description: Current Date & Time    
+            
+      TransError for Payment Response Code 900:
+        type: object
+        properties:
+          ErrorCode:
+            type: string
+            description: Response Code For 900
+          ErrorCodeDesc:
+            type: string
+            description: Security Validation Process Failed
+          creationDate:
+            type: string
+            description: Current Date & Time   
+         
